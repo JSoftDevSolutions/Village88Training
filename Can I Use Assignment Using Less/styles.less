@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+// Variables
+@primary-text-color: white;
+@primary-background-color: #F2E9D6;
+@success: #258533;
+@warning: #94700C;
+@danger: #810000;
+.container {
+    background-color: #3E3523;
+    height: 750px;
+    margin: auto;
+    position: relative;
+    width: 1200px;
+    // Common Properties
+    #search, #search > form > input, #hashtag {
+        background-color: #C84F00;
+    }
+    main, main > #browser-datas > ul > .header {
+        background-color: @primary-background-color;
+    }
+    #hashtag, a, #search, #search > form > input, .danger, .success, .warning {
+        color:@primary-text-color;
+    }
+    #search > form, header > ul, header > ul > li, main > #browser-datas > ul {
+        display: inline-block;
+    }
+    #hashtag, #search, #search > form > input {
+        text-align: center;
+    }
+    #search > a, header > ul > li > a ,#hashtag {
+        text-decoration: none;
+    }
+    #search {
+        font-size: 33px;
+        margin: 0px 60px 0px 60px;
+        padding: 20px 0px 20px 0px;
+        form > input {
+            border:none;
+            border-bottom: 1px solid @primary-text-color; 
+        }
+    }
+    #hashtag {
+        font-size: 30px;
+        left: 20px;
+        padding: 0px;
+        position: absolute;
+        top:210px;
+        width: 40px;
+    }
+    // Header Section
+    header {
+        padding: 20px;
+        ul {
+            margin: 0 0 20px 0;
+            width: auto;
+            li > a {
+                background-color: #524B3B;
+                padding: 18px;
+            }
+            #group-link-two {
+                margin-left: 665px;
+            }
+        }
+    }
+    // Main Content
+    main {
+        margin: 30px 60px 0px 60px;
+        h3 {
+            font-size: 25px;
+            font-weight: lighter;
+            padding: 20px 0px 0px 20px;
+        }
+        p {
+            line-height: 25px;
+            margin: 0px 0px 0px 20px; 
+            width: 400px; 
+        }
+        #browser-datas {
+            margin-top: 20px;
+            padding: 0px 30px 10px 30px;
+            ul {
+                background-color: #EBE2CF;
+                padding-left: 0px;
+                vertical-align: top;
+                li {
+                    height: 25px;
+                    list-style: none;
+                    margin: 3px 2px 0 0;
+                    padding-top: 7px;
+                    position: relative;
+                    text-align: center;
+                    width: 87px;
+                    // For the Floating Content
+                    span {
+                        background-color: white;
+                        color:black;
+                        font-size: 10px;
+                        left: 0;
+                        margin: 1px 0 0 1px;
+                        padding: 1px 3px 1px 3px;
+                        position: absolute;
+                        top: 0;
+                    }
+                }
+                // Browser Data Header
+                .header {
+                    border-bottom: 4px solid black;
+                    height: 40px;
+                    margin: 0px;
+                    width: 89px;
+                }
+                .success{
+                    background-color: @success;
+                }
+                .warning {
+                    background-color: @warning;
+                }
+                .danger {
+                    background-color: @danger;
+                }
+            }
+        }
+    }
+}
