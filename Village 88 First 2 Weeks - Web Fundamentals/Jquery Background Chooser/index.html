@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Background Chooser</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#main_box').click(function(){
+                    $(this).css('background-image', 'none');
+                    $("#main_box").children().css('border', 'none');
+                })
+                $('.mini_boxes').click(function(event){
+                    event.stopPropagation();
+                    
+                    var bg_image = 'url(' + $(this).attr('src') + ')';
+                    $("#main_box").css('background-image', bg_image);
+                    $("#main_box").children().css('border', 'none');
+                    $(this).css('border', '2px solid yellow');
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Background Chooser</h1>
+        <div id="main_box">
+            <img src="images/background1.gif" class="mini_boxes">
+            <img src="images/background2.gif" class="mini_boxes">
+            <img src="images/background3.gif" class="mini_boxes">
+            <img src="images/background4.gif" class="mini_boxes">
+        </div>
+    </body>
+</html>

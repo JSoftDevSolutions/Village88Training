@@ -1,0 +1,27 @@
+{
+  "name": "peek",
+  "title": "Peek",
+  "description": "jQuery Peek is a great way to keep your navigation while preserving your precious screen real estate for your content. While the user is viewing the page, the navigation is tucked away. When the user scrolls up (or down), the navigation will reaper.",
+  "version": "0.1.1",
+  "homepage": "https://nrdobie.github.io/jquery-peek",
+  "author": {
+    "name": "Nicholas Dobie",
+    "email": "nick@nickdobie.com",
+    "url": "http://nickdobie.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nrdobie/jquery-peek.git"
+  },
+  "bugs": "https://github.com/nrdobie/jquery-peek/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nrdobie/jquery-peek/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": ["navigation"]
+}

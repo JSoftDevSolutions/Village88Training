@@ -1,0 +1,210 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 850px;
+    width: 970px;
+    background-color: #28557B;
+    border: 1px solid #28557B;;
+    margin: auto;
+}
+
+header {
+    padding: 20px 20px 50px 20px;
+}
+header h1 {
+    color: #F5C452;
+    padding: 40px 20px 20px 60px;
+    font-size: 25px;
+    font-family: SourceSansProBold, Arial, sans-serif;
+}
+header h1 span {
+    display: block;
+}
+header p {
+    font-size: 15px;
+}
+header p span {
+    color: white;
+    display: block;
+    font: normal 100%/1.625 SourceSansProRegular, Arial, sans-serif;
+    padding: 0px 0px 0px 60px;
+}
+header #logo {
+    width: 250px;
+    height: 60px;
+    display: inline-block;
+}
+header #box {
+    height: 350px;
+    width: 450px;
+    position:absolute;
+    top:135px;
+    left:700px;
+}
+header #donate {
+    background-color: #FFD549;
+    border:none;
+    border-radius: 5px;
+    display: inline-block;
+    left: 230px;
+    padding: 5px 10px 5px 10px;
+    position: relative;
+    top: 15px;
+    vertical-align: top;
+    cursor: pointer;
+    text-decoration: none;
+}
+header .search-menu {
+    background-color: #1E2933;
+    border-radius: 10px;
+    display: inline-block;
+    height: 30px;
+    position:relative;
+    left: 230px;
+    padding: 10px;
+    vertical-align: top;
+    width: auto;
+}
+header .search-menu input[type="text"] {
+    height: 25px;
+    width: 200px;
+}
+header .search-menu input[type="submit"] {
+    background-color: #2B5C86;
+    border-radius: 5px;
+    color:white;
+    padding: 6px;
+}
+header .search-menu a {
+    border-left: 1px solid black;
+    color:white;
+    margin-left: 20px;
+    padding: 15px;
+    text-decoration: none;
+}
+header nav {
+    background-color: #3673A7;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+header nav ul {
+    padding: 10px;
+}
+header nav ul > li {
+    display: inline-block;
+}
+header nav a {
+    border-right: 1px solid #3E6A8F;
+    color:white;
+    margin-top: 5px;
+    text-decoration: none;
+    padding: 12px;
+    vertical-align: middle;
+}
+header nav .active {
+    background-color: #2B5A81;
+    border-right: 1px solid #3E6A8F;
+    color:white;
+    margin-top: 5px;
+    text-decoration: none;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.main {
+    background-color: white;
+    padding: 20px 20px 40px 20px;
+}
+.main .latest-news,
+.main .phyton-usefor {
+    width: 49%;
+    border-top: 5px solid #75A8D3;
+    display: inline-block;
+    vertical-align: top;
+}
+.main h3 {
+    display: inline-block;
+    font-family: Flux-Regular, SourceSansProRegular, Arial, sans-serif;
+    margin: 20px 0px 0px 20px;
+    color: #484849;
+}
+.main .more {
+    color: #B0A2B5;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    left: 250px;
+}
+.main ul {
+    list-style: none;
+    font-size: 13px;
+    margin: 20px 0px 0px 20px;
+}
+.main ul > li {
+    border-top: 1px solid  #B0A2B5;
+    padding: 5px 0px 5px 0px;
+}
+.main .latest-news ul a {
+    color: #75A8D3;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.main .phyton-usefor {
+    margin-left: 10px;
+}
+.main .phyton-usefor .more {
+    position: relative;
+    left: 210px;
+}
+.main .phyton-usefor ul  {
+    font-weight: bold;
+}
+.main .phyton-usefor ul a {
+    background-color: #E6E8EA;
+    border-bottom: 2px solid #CFD1D3;
+    color: #87778d;
+    font-size: 11px;
+    margin-left: 5px;
+    padding: 2px;
+    text-decoration: none;
+}
+.main .phyton-usefor ul .last-item {
+    border-bottom: 1px solid  #B0A2B5;
+}
+
+footer {
+    color: #74AAD7; 
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 20px;
+}
+footer .footer-main-links > li {
+    display: inline-block;
+    padding: 15px;
+}
+footer .footer-main-links > li a {
+    color: #74AAD7;
+    text-decoration: none;
+    font-size: 18px;
+}
+footer .footer-main-links > li span {
+    color: #008000;
+    font-size: 15px;
+}
+footer .footer-sub-links > li {
+    display: inline-block;
+    font-size: 12px;
+}
+footer .footer-sub-links > li a {
+    border-bottom: 1px dotted #74AAD7;
+    color: #74AAD7;
+    margin-left: 5px;
+    text-decoration: none;
+}

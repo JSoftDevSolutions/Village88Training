@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+    <form action="order_pizza.php" method="post">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname"> <br>
+        
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname"> <br>
+
+        <label for="email">Email Address:</label>
+        <input type="text" name="email" id="email"> <br>
+        
+        <label for="contact_number">Contact Number:</label>
+        <input type="text" name="contact_number" id="contact_number"> <br>
+
+        <label for="delivery_date">Preffered Delivery Date:</label>
+        <input type="date" name="delivery_date" id="delivery_date"> <br>
+
+        <p>Size:</p> <br>
+        <label>
+            <input type="radio" name="size" value="Small"> Small
+        </label>
+        <label>
+            <input type="radio" name="size" value="Medium"> Medium
+        </label>
+        <label>
+            <input type="radio" name="size" value="Large"> Large
+        </label> <br>
+
+        <p>Flavor:</p> <br>
+        <label for="hawaiian">
+            <input type="checkbox" id="hawaiian"  name="flavor" value="Hawaiian"> Hawaiian (Php 150.00)
+        </label>
+        
+        <select name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <br>
+        <label>
+            <input type="checkbox"  name="flavor" value="Pepperoni"> Pepperoni (Php 140.00)
+        </label>
+        <select name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <br>
+        <label>
+            <input type="checkbox"  name="flavor" value="Vegetable"> Vegetable (Php 150.00)
+        </label>
+        <select name="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <br>
+        <label for="credit_card_number">Credit Card Number:</label>
+        <input type="text" name="credit_card_number" id="credit_card_number">
+        <br>
+        <label for="pin">PIN:</label>
+        <input type="password" name="pin" id="pin">
+        <br>
+        <label for="pin">Additional Note:</label>
+        <textarea name="additional_note"></textarea>
+        <br>
+        <input type="submit" value="Submit Order">
+    </form>
+</body>
+</html>

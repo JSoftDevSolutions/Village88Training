@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Form Validation</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        $(document).ready(function() {
+            $( function() {
+                $( "#preferred_date" ).datepicker();
+            } );
+            function changeBorderColor(fieldName) {
+                if ($(fieldName).val() != ""){
+                    $(fieldName).css('border', '2px solid black');
+                }
+                else {
+                    $(fieldName).css('border', '2px solid red');
+                }
+            }
+
+            $( "input[type=submit]" ).on( "click", function( event ) {
+                if ($("#firstname").val() == "" && $("#lastname").val() == "") { 
+                    alert("First Name and Last Name field is required")
+                    changeBorderColor("#firstname");
+                    changeBorderColor("#lastname");
+                }
+                else if ($("#firstname").val() == "") { 
+                    alert("First Name field is required")
+                    changeBorderColor("#firstname");
+                }
+                else if($("#lastname").val() == "") {
+                    alert("Last Name field is required")
+                    changeBorderColor("#lastname");
+                }
+                else if($("#preferred_date").val() == "") {
+                    alert("Preferred Date field is required")
+                }
+                else {
+                    alert("Success Reserve, " + $("#firstname").val() + ' ' + $("#lastname").val() + ', on ' + $("#preferred_date").val());
+                }
+                event.preventDefault();
+            } );
+            $("#firstname").focusout(function() {
+                changeBorderColor("#firstname");
+            })
+            $("#lastname").focusout(function() {
+                changeBorderColor("#lastname");
+            })
+        });
+    </script>
+</head>
+<body>
+    <form action="">
+        <h1>Scheduling Form for Vacination</h1>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname" required>
+        <label for="middlename">Middle Name:</label>
+        <input type="text" name="middlename" id="middlename">
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname" required>
+        <label for="preferred_date">Preferred Date:</label>
+        <input type="text" id="preferred_date">
+        <input type="submit" value="Reserve">
+    </form>
+</body>
+</html>

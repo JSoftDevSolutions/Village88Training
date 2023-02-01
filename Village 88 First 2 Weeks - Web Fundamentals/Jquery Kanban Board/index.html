@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery Kanban Board</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            $(document).ready(function() {
+                // $( "#todo, #in-progress, #for-approval, #testing, #done" ).sortable({
+                $(".connectedSortable").sortable({
+                    connectWith: ".connectedSortable",
+                }).disableSelection();
+            });
+        </script>
+    </head>
+    <body>
+        <ul id="todo" class="connectedSortable"><span class="not-sortable">To-Do</span>
+            <li><img src="images/avatar1.png" alt=""><span>First Content 1 </span></li>
+            <li><img src="images/avatar2.png" alt=""><span>First Content 2 </span></li>
+            <li><img src="images/avatar3.png" alt=""><span>First Content 3 </span></li>
+        </ul>
+        <ul id="in-progress" class="connectedSortable"><span>In-progress</span>
+            <li><img src="images/avatar1.png" alt=""><span>First Content 4 </span></li>
+            <li><img src="images/avatar2.png" alt=""><span>First Content 5 </span></li>
+            <li><img src="images/avatar3.png" alt=""><span>First Content 6 </span></li>
+        </ul>
+        <ul id="for-approval" class="connectedSortable"><span>For-Approval</span>
+            <li><img src="images/avatar1.png" alt=""><span>First Content 7 </span></li>
+            <li><img src="images/avatar2.png" alt=""><span>First Content 8 </span></li>
+            <li><img src="images/avatar3.png" alt=""><span>First Content 9 </span></li>
+        </ul>
+        <ul id="testing" class="connectedSortable"><span>Testing</span>
+            <li><img src="images/avatar1.png" alt=""><span>First Content 10 </span></li>
+            <li><img src="images/avatar2.png" alt=""><span>First Content 11 </span></li>
+            <li><img src="images/avatar3.png" alt=""><span>First Content 12 </span></li>
+        </ul>
+        <ul id="done" class="connectedSortable"><span>Done</span>
+            <li><img src="images/avatar1.png" alt=""><span>First Content 13 </span></li>
+            <li><img src="images/avatar2.png" alt=""><span>First Content 14 </span></li>
+            <li><img src="images/avatar3.png" alt=""><span>First Content 15 </span></li>
+        </ul>
+    </body>
+</html>

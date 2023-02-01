@@ -1,0 +1,116 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:sans-serif;
+}
+.container {
+    width: 800px;
+    margin: auto;
+    background-color: #D4DEE7;
+}
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header {
+    padding: 20px;
+}
+header img {
+    height: 200px;
+    width: 200px;
+}
+header .info {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 0px 20px 20px;
+    width: 530px;
+}
+.info h1 {
+    color: #2D4767;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.info h2 {
+    font-size: 16px;
+    margin-left: 0px;
+    text-align: left;
+}
+.info ul {
+    margin-top: 15px;
+    border-top: 2px solid  #2D4767;
+}
+.info ul>li {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.about-me {
+    background-color: #E7EAEF;
+    margin: 0px 20px 20px 20px;
+    padding: 20px;
+    text-align: center;
+}
+.about-me p {
+    margin-top: 20px;
+    text-align: justify;
+
+}
+
+.technologies {
+    width: 330px;
+    height: 370px;
+    margin-left: 20px;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+.technologies h3 {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.technologies img{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+.projects {
+    height: 370px;
+    width: 330px;
+    background-color: #EDEDED;
+    padding: 20px;
+    margin-left: 12px;
+    vertical-align: top;
+    display: inline-block;
+}
+.projects h3 {
+    font-size: 20px;
+}
+.projects h4 {
+    margin-top: 20px;
+}
+.projects p {
+    margin-top: 10px;
+    word-spacing: 10px;
+}
+.projects ul>li {
+    margin: 10px 10px 10px 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+footer img {
+    height: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+footer a {
+    color:black;
+    font-style: italic;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Matchy Matchy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Candy Crash Using Jquery</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                $("main img").click(function() {
+                    var alt_img = $(this).attr('data-alt-src');
+                    var src = $(this).attr('src');
+
+                    // $(this).fadeOut();
+                    $(this).attr("src", alt_img);
+                    $(this).attr("data-alt-src", src);
+                    // $(this).fadeIn();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <img src="images/question-mark.png" data-alt-src='images/ajax.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/bootstrap.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/c-sharp.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/html.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/JavaScript.png' alt="question-mark">
+
+                <img src="images/question-mark.png" data-alt-src='images/bootstrap.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/jQuery.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/mysql.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/php.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/python.png' alt="question-mark">
+
+                <img src="images/question-mark.png" data-alt-src='images/c-sharp.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/python.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/php.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/jQuery.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/html.png' alt="question-mark">
+
+                <img src="images/question-mark.png" data-alt-src='images/JavaScript.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/sqlite.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/mysql.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/sqlite.png' alt="question-mark">
+                <img src="images/question-mark.png" data-alt-src='images/ajax.png' alt="question-mark">
+            </main>
+        </div>
+    </body>
+</html>
+</body>
+</html>

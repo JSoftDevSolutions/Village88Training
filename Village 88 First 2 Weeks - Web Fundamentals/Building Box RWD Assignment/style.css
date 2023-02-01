@@ -1,0 +1,117 @@
+/*CSS reset settings here*/
+*{
+    font-family: 'Roboto', sans-serif;
+}
+#logo, #navigation, #about, #advertisement, #sponsorts {
+    display: inline-block;
+}
+#logo, #navigation {
+    height: 130px;
+}
+#wrapper{
+    background-color: #FFD9B7;
+}
+#logo{
+    background-color: #B97A57;
+}
+#navigation{
+    background-color: #FF7F27;
+}
+#main_content{
+    background-color: #880015;
+}
+#about{
+    background-color: #FFAEC9;
+    height: 250px;
+}
+#advertisement{
+    background-color: #C8BFE7;
+    height: 0px;
+    vertical-align: top;
+    width: 0;
+    margin: 0;
+}
+.sponsors{
+    background-color: #FFFF88;
+    height: 65px;
+}
+
+@media only screen and (max-width: 480px) {
+    #logo, #navigation, #about, .sponsors {
+        width: 100%;
+    }
+    .sponsors {
+        display: block;
+        margin-top: 10px;
+    }
+    #main_content {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+}
+@media only screen and (min-width: 481px) {
+    #logo, #navigation {
+        display: inline-block;
+    }
+    #wrapper {
+        font-size: 0;
+        padding-bottom: 50px;
+    }
+    #logo {
+        width: 20%;
+        font-size: 0;
+    }
+    #navigation {
+        width: 77%;
+        margin-left: 3%;
+    }
+    #main_content {
+        margin-top: 20px;
+        padding: 40px;
+    }
+    #about {
+        width: 100%;
+    }
+    .sponsors {
+        margin-top: 10px;
+        margin-right: 2%;
+        width: 48%;
+        display: inline-block;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #logo, #navigation {
+        display: inline-block;
+    }
+    #wrapper {
+        width: 940px;
+        margin: auto;
+        padding: 20px;
+    }
+    #logo {
+        width: 20%;
+    }
+    #navigation {
+        width: 77%;
+        margin-left: 22px;
+    }
+    #main_content {
+        width: 91%;
+        padding: 40px;
+    }
+    #about {
+        width: 75%;
+    }
+    #advertisement {
+        height: 200px;
+        width: 155px;
+        margin-left: 6%;
+    }
+    .sponsors{
+        width: 310px;
+        background-color: #FFFF88;
+        margin-top: 20px;
+        margin-right: 2px;
+        display: inline-block;
+    }
+}

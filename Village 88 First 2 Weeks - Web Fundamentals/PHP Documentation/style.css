@@ -1,0 +1,208 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 970px; 
+    margin: auto;  
+    background-color: #333333;
+    margin-top: 0px;
+}
+
+nav {
+    height: 40px;
+    background-color: #8892BF;
+    padding-left: 20px;
+    border-bottom: 2px solid #4F5B93;
+}
+nav img {
+    height: 40px;
+    width: 60px;
+    display: inline-block;
+}
+nav ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 11px;
+}
+nav ul > li {
+    display: inline-block;
+}
+nav ul > li a {
+    color:white;
+    text-decoration: none;
+    padding: 11px 10px 12px 10px;
+}
+nav ul > li .active {
+    background-color: #4F5B93;
+}
+nav #search {
+    display: inline-block;
+    vertical-align:top;
+    margin-left: 190px;
+    margin-top:10px;
+    width: 200px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.main {
+    background-color: #333333;
+    height: 600px;
+    width: 700px;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+}
+.sub-menu {
+    height: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+.sub-menu a {
+    text-decoration: none;
+    color:#7F7E82;
+    font-size: 12px;
+}
+
+.content {
+    background-color: #F2F2F2;
+    height: 100%;
+}
+.content h3 {
+    color:black;
+    padding: 10px 10px 5px 0px;
+    border-bottom: 1px dotted black;
+    margin: 10px 10px 10px 20px;
+}
+.content ul {
+    margin-left: 20px; 
+    color: black;
+    padding: 20px;
+}
+.content ul > li {
+    margin-top: 10px;
+}
+.content ul > li a {
+    color:#356DA3;
+}
+.content p {
+    color:#7F7E82;
+    padding: 0px 20px 20px 20px;
+    text-align: justify;
+}
+.content p a {
+    color:#356DA3;
+}
+.content .contributed {
+    color:#793862;
+    padding: 0px 100px 0px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content .add-note {
+    color:#356DA3;
+    margin-left: 300px;
+    font-size: 12px;
+    text-decoration: none;
+    border-bottom: 1px solid #356DA3;
+}
+.content .add-note img {
+    height: 10px;
+    width: 10px;
+}
+.content .notes {
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-top: 1px dotted black;
+}
+.content .content-head {
+    padding: 20px 20px 0px 20px;
+    text-align: right;
+    color: black;
+}
+.content .content-head a {
+    color:#356DA3;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.content .content-head p {
+    display: inline-block;
+}
+.content .content-head select {
+    display:inline-block;
+}
+
+.side-menu {
+    width: 260px;
+    height: 650px;
+    display: inline-block;
+    margin-left: 0px;
+    color:white;
+}
+.sidemenu-body h3 {
+    margin: 10px 0px 10px 20px;
+}
+.side-menu .sidemenu-body .intro {
+    display: block;
+    margin: 0px 20px 0px 20px;
+    border-bottom: 1px dotted white;
+    border-top: 1px dotted white;
+    color:white;
+    text-decoration: none;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+}
+.side-menu .sidemenu-body .link {
+    display: block;
+    margin: 0px 20px 0px 20px;
+    border-bottom: 1px dotted #AB4D84;
+    color:#AB4D84;
+    text-decoration: none;
+    padding: 5px 0px 5px 10px;
+    font-size: 12px;
+}
+.menu-header {
+    height: 20px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 0px;
+}
+.menu-header a {
+    text-decoration: none;
+    color:#7F7E82;
+    font-size: 12px;
+}
+
+footer {
+    height: 60px;
+}
+footer h4 {
+    display: inline-block;
+    color:white;
+    margin: 30px 0px 0px 40px;
+}
+footer ul {
+    display: inline-block;
+    margin-left: 20px;
+}
+footer ul > li {
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+footer ul > li a {
+    text-decoration: none;
+    color:white;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery Mini Documentation</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <aside>
+            <a href="#click">.click()</a>
+            <a href="#hide">.hide() </a>
+            <a href="#show">.show()</a>
+            <a href="#toogle">.toogle()</a>
+            <a href="#slideDown">.slideDown()</a>
+            <a href="#slideUp">.slideUp()</a>
+            <a href="#slideToggle">.slideToggle()</a>
+            <a href="#fadeIn">.fadeIn()</a>
+            <a href="#fadeOut">.fadeOut()</a>
+            <a href="#addClasas">.addClass()</a>
+            <a href="#before">.before()</a>
+            <a href="#after">.after()</a>
+            <a href="#append">.append()</a>
+            <a href="#html">.html()</a>
+            <a href="#attr">.attr()</a>
+            <a href="#val">.val()</a>
+            <a href="#text">.text()</a>
+        </aside>
+        <main>
+            <h1>Jquery Mini Documentation</h1>
+            <section id="click">
+                <h2>Click</h2>
+                <button>.click()</button>
+                <p>Binds an event handler to the "click" Javascript event, or trigger that event on an element. Example Clicking the button will display an alert box.</p>
+            </section>
+            <section id="hide">
+                <h2>Hide</h2>
+                <button>.hide()</button>
+                <p>Hides the match Elements. Example: Hiding this paragraph.</p>
+            </section>
+            <section id="show">
+                <h2>Show</h2>
+                <button>.show()</button>
+                <p>Shows the match Elements. Example: Hiding this paragraph.</p>
+                <p class="content">Hidden Content</p>
+            </section>
+            <section id="toggle">
+                <h2>Toggle</h2>
+                <button>.toggle()</button>
+                <p>Bind two or more handlers to the matched elements, to be executed on alternate clicks.</p>
+            </section>
+            <section id="slideDown">
+                <h2>Slide Down</h2>
+                <button>.slideDown()</button>
+                <p class="content">Display the matched elements with a sliding motion.Display the matched elements with a sliding motion.</p>
+            </section>
+            <section id="slideUp">
+                <h2>Slide Up</h2>
+                <button>.slideUp()</button>
+                <p class>Hide the matched elements with a sliding motion.</p>
+            </section>
+            <section id="slideToggle">
+                <h2>Slide Toggle</h2>
+                <button>.slideToggle()</button>
+                <p>Display or hide the matched elements with a sliding motion.</p>
+            </section>
+            <section id="fadeIn">
+                <h2>Fade In</h2>
+                <button>.fadeIn()</button>
+                <p class="content">Display the matched elements by fading them to opaque.</p>
+            </section>
+            <section id="fadeOut">
+                <h2>Fade Out</h2>
+                <button>.fadeOut()</button>
+                <p>Hide the matched elements by fading them to transparent.</p>
+            </section>
+            <section id="addClass">
+                <h2>Add Class</h2>
+                <button>.addClass()</button>
+                <p>Adds the specified class(es) to each element in the set of matched elements.</p>
+            </section>
+            <section id="before">
+                <h2>Before</h2>
+                <button>.before()</button>
+                <p>Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+            </section>
+            <section id="after">
+                <h2>After</h2>
+                <button>.after()</button>
+                <p>Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+            </section>
+            <section id="append">
+                <h2>Append</h2>
+                <button>.append()</button>
+                <p>Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+            </section>
+            <section id="html">
+                <h2>Html</h2>
+                <button>.html()</button>
+                <p>Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.</p>
+            </section>
+            <section id="attr">
+                <h2 title="Attibute Example">Attr</h2>
+                <button>.attr()</button>
+                <p>Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+            </section>
+            <section id="val">
+                <h2>Val</h2>
+                <button>.val()</button>
+                <p>Get the current value of the first element in the set of matched elements or set the value of every matched element.</p>
+            </section>
+            <section id="text">
+                <h2>Text</h2>
+                <button>.text()</button>
+                <p>Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
+            </section>
+        </main>
+
+        <script>
+            //Click Function
+            $( "#click" ).click(function() {
+                alert( "This is .click() function of Jquery" );
+            });
+            // Hide Function
+            $( "#hide" ).click(function() {
+                $( "#hide p" ).hide("slow");
+            });
+            //Show Function
+            $( "#show").click(function() {
+                $("#show p.content").show( "slow");
+            });
+            // Toggle Function
+            $("#toggle button").click(function() {
+                $("#toggle p").toggle( "slow");
+            });
+            //slideDown Function
+            $("#slideDown").click(function() {
+                $("#slideDown p").slideDown( "slow", function() {
+                    $("#slideDown p").css('display', 'inline-block');
+                });
+            });
+            //slideUp Function
+            $("#slideUp").click(function() {
+                $("#slideUp p").slideUp( "slow");
+            });
+            //slideUp Toogle
+            $("#slideToggle").click(function() {
+                $("#slideToggle p").slideToggle( "slow");
+            });
+            //fadeIn
+            $("#fadeIn").click(function() {
+                $("#fadeIn p").fadeIn( "slow", function() {
+                    $("#fadeIn p").css('display', 'inline-block');
+                });
+            });
+            //fadeIn
+            $("#fadeOut").click(function() {
+                $("#fadeOut p").fadeOut( "slow");
+            });
+            //Add Class
+            $("#addClass").click(function() {
+                $( "#addClass p" ).last().addClass( "success" );
+            })
+            //Before
+            $("#before button").click(function() {
+                $("#before p").before("Added New Text Before");
+            });
+            //Before
+            $("#after button").click(function() {
+                $("#after p").after("Added New Text After");
+            });
+            //Before
+            $("#append button").click(function() {
+                $("#append p").append(" New Append Text");
+            });
+            //Html
+            $("#html button").click(function() {
+                $("#html p").html("New Inserted Text");
+            });
+            //Val
+            $( "#val button" ).click(function() {
+                var value = $( "#html p" ).val();
+                $( "#val p" ).text( value );
+            })
+            //Attr
+            $("#attr button").click(function() {
+                var title = $( "#attr h2" ).attr( "title" );
+                $( "#attr p" ).text( title );
+            });
+            //Text
+            $("#text button").click(function() {
+                var str = $( "#val p" ).first().text();
+                $( "#text p" ).last().html( str );
+            });
+        </script>
+    </body>
+</html>

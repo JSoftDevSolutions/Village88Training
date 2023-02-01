@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blog Site - Malangas</title>
+
+        <meta name="description" content="All About the Municipality of Malangas" >
+    </head>
+    <body>
+        <div>
+            <h1>Municipality of Malangas</h1>
+            <img src="malangas.jfif" alt="Malangas Cover Photo">
+            <h2>About Malangas</h2>
+            <p>
+                The municipality is generally rolling near the shorelines and mountainous in the hinterland with some patches of flat land located within the mangroves near the shorelines. It borders Buug to the north-east; Diplahan to the north-west; Imelda to the west; Margosatubig, Zamboanga del Sur, to the east; and Alicia to the south.
+            </p>
+
+            <p>
+                Malangas is the site of coal mining in Western Mindanao area, operated by the Philippine National Oil Company - Exploration Corporation. The coalmine is one of the largest in the country. Its town center nests in a harbor in Dumanquilas Bay, boasts of its twin ports, one for coal, the other for passengers.
+            </p>
+        </div>
+
+        <div>
+            <h2>Tourist Destinations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Number</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="#">Muyong Island</a></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="#">Buntong Falls</a></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="#">Paseo Del Bunker</a></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="#">Dampa ng Malangas</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <h2>Malangas List of Barangays</h2>
+            <ul>
+                <li>Poblacion</li>
+                <li>La Dicha</li>
+                <li>Malongon</li>
+                <li>Candiis</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Please Take a short Survey</h2>
+            <form action="survey.php" method="post">
+                <label for="experience">Share your experience in this place:</label>
+                <input type="text" name="experience" id="experience">
+
+                <p>Can you recommend Malangas as one of the best Tourist Spots in the Philippines?</p>
+
+                <input type="radio" id="recommended" name="answer" value="yes">
+                <label for="recommended">Yes, I can Recommend this place.</label>
+
+                <input type="radio" id="not_recommended" name="answer" value="no">
+                <label for="not_recommended">No, I can't Recommend this place.</label>
+
+                <p>How did you know this place?</p>
+                
+                <input type="checkbox" id="facebook" name="know_from" value="facebook">
+                <label for="facebook">Facebook</label>
+
+                <input type="checkbox" id="google" name="know_from" value="google">
+                <label for="google">Google</label>
+
+                <input type="checkbox" id="friends" name="know_from" value="friends">
+                <label for="friends">Friends</label>
+            </form>
+        </div>
+    </body>
+</html>

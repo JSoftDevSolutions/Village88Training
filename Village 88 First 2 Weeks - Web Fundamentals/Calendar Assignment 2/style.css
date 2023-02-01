@@ -1,0 +1,80 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Content Wrapper */
+#container{
+    width: 800px;
+    margin: 0px auto;
+    margin-top:2%;
+    padding: 40px;
+}
+
+.row {
+    margin-top: 10px;
+    height: auto;
+}
+
+/* For Display 2 Mini Calendar and Heading */
+.header {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.header img {
+    display: inline-block;
+    margin-left: 10px;
+    width: 200px;
+}
+.header h1 {
+    display: inline-block;
+    margin-left: 100px;
+    margin-right: 95px;
+    vertical-align: top;
+    margin-top: 40px;
+}
+
+
+/* For Displaying Calendar Data */
+.row p {
+    width: 90px;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 10px 0;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* For Sunday Datas */
+.left-content {
+    background-color: #5B9BD5;
+}
+
+/* For Saturday Datas */
+.right-content {
+    background-color: #A9D08E;
+}
+
+.disabled-day {
+    background-color: #E7E6E6;
+    border: 2px solid #E7E6E6;
+    width: 90px;
+    display: inline-block;
+    padding: 20px 0;
+    margin-left: 10px;
+    margin-bottom: -15px;
+}
+
+/* .disabled-dayp {
+    border: none;
+    background-color: #E7E6E6;
+    width: 90px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: -15px;
+} */
+
